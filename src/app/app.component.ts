@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     this.columnTitles[1] = "Y [l]";
   }
 
-  public updateDataset(data: any, firstColumnTitle: String, secondColumnTitle: String) {
+  public updateDataset(data: any) {
     this.data = data;
     this.data = this.data.slice();
   }
