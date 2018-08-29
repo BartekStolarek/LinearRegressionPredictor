@@ -1,4 +1,4 @@
-# LinearPredict
+# LinearRegressionPredictor
 
 ### Description 
 This app is predicting values of linear regression by using TensorFlow Machine Learning features.
