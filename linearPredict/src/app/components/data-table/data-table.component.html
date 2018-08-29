@@ -1,0 +1,11 @@
+<table>
+    <tr>
+        <th><input type='text' value='X [km/h]' class='title-input'></th>
+        <th><input type='text' value='Y [l]' class='title-input'></th>
+    </tr>
+    <tr *ngFor="let item of data; let i = index">
+        <th><input type='number' value={{data[i].x}} (change)="changeValues($event, i, 'x')"></th>
+        <th><input type='number' value={{data[i].y}} (change)="changeValues($event, i, 'y')"></th>
+    </tr>
+</table>
+<p class="alert alert-info">An example table: Skoda Octavia fuel usage on a highway.</p>

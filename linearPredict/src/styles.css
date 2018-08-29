@@ -1,0 +1,101 @@
+.table-container {
+    width: 100%;
+    margin: 15px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #ddd;
+    margin-top: 30px;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+input[type='number'] {
+    width: 100%;
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+    text-align: center;
+    border: 0px solid #eee;
+}
+
+input[type='text'] {
+    width: 100%;
+    text-align: center;
+    border: 0;
+}
+
+.form-control {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alert-success {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+}
+
+.predict-input {
+    border: 1px solid #eee !important;
+    border-radius: 5px;
+}
+
+.training-caption {
+    padding-top: 2px;
+    padding-right: 10px;
+    float: left;
+}
+
+.border {
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+    fill: #ffab00;
+    stroke: #fff;
+}
+
+/* Loader Styles */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+    float: left;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

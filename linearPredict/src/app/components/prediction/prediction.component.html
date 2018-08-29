@@ -1,0 +1,15 @@
+<div class="form-control">
+    <label>Type <b>Y</b> value, to get predicted <b>X</b> by machine learning (in base example- 
+        type fuel usage, to get predicted speed):</label>
+    <div *ngIf="loaded" class="row">
+        <input type="number" class="predict-input" placeholder="ex. 5.9" [(ngModel)]="inputValue" (change)="predict()">
+    </div>
+    <div *ngIf="!loaded" class="row border">
+        <div class="center">
+            <div class="training-caption">Training model...</div>
+            <div class="loader"></div>
+        </div>
+    </div>
+</div>
+
+<p class="alert alert-success">Estimated X value is: <b>{{ prediction }}</b></p>
