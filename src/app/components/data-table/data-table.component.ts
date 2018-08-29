@@ -7,7 +7,9 @@ import { EventEmitter } from '@angular/core';
 })
 export class DataTableComponent {
     @Input() data: any;
+    @Input() columnTitles: any;
     @Output() onValuesChange: EventEmitter<any> = new EventEmitter<any>();
+    @Output() onTitlesChange: EventEmitter<any> = new EventEmitter<any>();
     
     public changeValues(event, index, xy) {
         try {
@@ -16,5 +18,9 @@ export class DataTableComponent {
         } catch (err) {
             console.log("This value is incorrect.");
         }       
+    }
+
+    public changeTitles(event) {
+        this.onTitlesChange.emit(this.columnTitles);
     }
 }

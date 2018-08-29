@@ -12,13 +12,21 @@
     <div class="col-md-4">
       <div class="row">
         <div class='table-container'>
-          <data-table (onValuesChange)="updateDataset($event)" [data]="data"></data-table>
+          <data-table 
+            [data]="data"
+            [columnTitles]="columnTitles"
+            (onTitlesChange)="updateTitles($event)"
+            (onValuesChange)="updateDataset($event)">
+          </data-table>
         </div>
       </div>
     </div>
     <div class="col-md-8">
       <div class="row">
-        <graph-data [data]="data"></graph-data>
+        <graph-data 
+          [data]="data"
+          [columnTitles]="columnTitles">
+        </graph-data>
       </div>
       <div class="row">
         <div class='center'>

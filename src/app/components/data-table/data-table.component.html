@@ -1,7 +1,7 @@
 <table>
     <tr>
-        <th><input type='text' value='X [km/h]' class='title-input'></th>
-        <th><input type='text' value='Y [l]' class='title-input'></th>
+        <th><input type='text' [(ngModel)]="columnTitles[0]" (change)="changeTitles($event)" class='title-input'></th>
+        <th><input type='text' [(ngModel)]="columnTitles[1]" (change)="changeTitles($event)" class='title-input'></th>
     </tr>
     <tr *ngFor="let item of data; let i = index">
         <th><input type='number' value={{data[i].x}} (change)="changeValues($event, i, 'x')"></th>
