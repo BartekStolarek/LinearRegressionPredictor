@@ -17,4 +17,5 @@ So- according to default data values- if user type 5.9 liters fuel usage, algori
 * MustardUI
 
 ### Demo
+https://bartekstolarek.github.io/LinearRegressionPredictor/
 
