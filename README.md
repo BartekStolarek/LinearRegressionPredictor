@@ -17,7 +17,8 @@ So- according to default data values- if user type 5.9 liters fuel usage, algori
 * MustardUI
 
 ### How to set up the project
-``` npm i ```
+``` npm i ``` 
+then
 ``` ng serve --open ```
 
 ## Demo
