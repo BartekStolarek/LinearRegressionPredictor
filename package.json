@@ -1,5 +1,5 @@
 {
-  "name": "linear-predict",
+  "name": "linear-regression-predictor",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
