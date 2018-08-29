@@ -1,27 +1,20 @@
 # LinearPredict
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+### Description 
+This app is predicting values of linear regression by using TensorFlow Machine Learning features.
 
-## Development server
+### How it works
+User can provide a set of X and Y values in the data table (by default, data table is covered with car fuel usage values), then application is drawing a graph with these values in D3.js and immidiately begins training process of machine learning algorithm. When training process is completed, user can type value, according to which algorithm will provide predicted second value.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+For example- as set by default- data table is covered with fuel usage values of Skoda Octavia on the highway, where X- car speed and Y- fuel consumption. If the training process is completed, user can type fuel consumption value in the input, and the TensorFlow will predict at which speed this fuel usage would be correct. 
 
-## Code scaffolding
+So- according to default data values- if user type 5.9 liters fuel usage, algorithm should tell that car would use 5.9 [l/100km] at about 114 [km/h]. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Technologies used in project
+* Angular 6
+* D3.js
+* TensorFlow
+* MustardUI
 
-## Build
+### Demo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
