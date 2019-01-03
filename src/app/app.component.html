@@ -9,9 +9,9 @@
   </div>
 
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12">
       <div class="row">
-        <div class='table-container'>
+        <div class="table-container" id="table-container">
           <data-table 
             [data]="data"
             [columnTitles]="columnTitles"
@@ -21,14 +21,14 @@
         </div>
       </div>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 col-sm-12">
       <div class="row">
         <graph-data 
           [data]="data"
           [columnTitles]="columnTitles">
         </graph-data>
       </div>
-      <div class="row">
+      <div class="row" id="prediction-container">
         <div class='center'>
           <prediction [data]="data"></prediction>
         </div>

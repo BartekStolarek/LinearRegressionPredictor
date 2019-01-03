@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges, HostListener } from '@angular/core';
 import * as d3 from 'd3';
 
 @Component({
@@ -10,16 +10,23 @@ export class GraphComponent {
   @Input() columnTitles: any;
   public loaded: boolean = false;
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    if (event.target.innerWidth < 1200)
+      this.drawGraph();
+  }
+
   ngOnChanges(changes: any) {
     this.drawGraph();
   }
 
   drawGraph() {
     this.loaded = false;
+    let predictionElement = document.getElementById('prediction-container');
 
-    let margin = {top: 50, right: 50, bottom: 50, left: 50}
-    , width = window.innerWidth/1.5 - margin.left - margin.right
-    , height = window.innerHeight/1.5 - margin.top - margin.bottom;
+    let margin = {top: 50, right: 75, bottom: 50, left: 75}
+    , width = predictionElement.offsetWidth - margin.left - margin.right
+    , height = 460 - margin.top - margin.bottom;
 
     // The number of datapoints
     let n = this.data.length;
