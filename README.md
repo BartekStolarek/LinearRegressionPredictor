@@ -1,5 +1,10 @@
 # LinearRegressionPredictor
 
+> [!WARNING]
+> **Archived project**
+>
+> This project is no longer maintained and may not work with current dependency versions. It is kept public for reference and historical purposes.
+
 ### Description 
 This app is predicting values of linear regression by using TensorFlow Machine Learning features.
 
@@ -20,7 +25,4 @@ So- according to default data values- if user type 5.9 liters fuel usage, algori
 ``` npm i ``` 
 then
 ``` ng serve --open ```
-
-## Demo
-https://bartekstolarek.github.io/LinearRegressionPredictor/
 
